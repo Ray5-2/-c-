@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+	int ret ;
+	int ch;
+	char password[20] = { 0 };
+	printf("请输入密码\n");
+	scanf_s("%s", password,20);
+	printf("PLEASE CONFORM (Y\\N)\n");
+	while ((ch = getchar()) != '\n')
+	{
+		;
+	}
+	ret = getchar();
+	if (ret == 'Y')
+	{
+		printf("确认成功\n");
+	}
+	else
+	{
+		printf("确认放弃");
+	}
+
+}
